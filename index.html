@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="./src/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    
+    <title>YUNJI's Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="flex-r">
+            <div class="div-title">
+                <span>YUNJI's Portfolio</span>
+            </div>
+            <ul class="ul-menu flex-r">
+                <li class="li-menu" onClick="go(1)">Main</li>
+                <li class="li-menu" onClick="go(2)">About</li>
+                <li class="li-menu" onClick="go(3)">Skills</li>
+                <li class="li-menu" onClick="go(4)">Projects</li>
+                <li class="li-menu" onClick="go(5)">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="mobilenotice" class="flex-c">
+        <h1>현재 모바일페이지 수정중입니다.</h1>
+        <h2>번거로우시겠지만 PC로 확인부탁드립니다.</h2>
+        <h3>불편을 드려 죄송합니다.</h3>
+    </section>
+    <section id="page1" class="flex-c">
+        <h1 id="title" class="bordercursor"></h1>
+        <h1 id="title2" class="bordercursor"></h1>
+    </section>
+    <section id="page2" class="flex-c up-on-scroll">
+        <div class="flex-r mar-b div-p2-wid">
+            <img src="src/img/profile.png" id="prf-img" alt="profile-image">
+            <div id="prf-info" class="mar-l">
+                <p class="p-bold">늘 사용자 입장에 서는, <br>따뜻한 개발자가 되고 싶은<br> <span style="font-weight: 700; color:#FF5F6D;">장윤지</span>입니다."</p>
+                <p id="p-if-name">YUNJI JANG</p>
+                <p class="p-sm">1995. 6. 6</p>
+                <p class="flex-r p-sm p-mg"><img src="./src/img/mail-logo.svg" class="img-si" alt="mail-logo">bee1513@gmail.com</p>
+                <p class="flex-r p-sm p-mg"><img src="./src/img/github-logo.svg" class="img-si" alt="github-logo"><a href="http://github.com/yjnim">github.com/yjnim</a></p>
+            </div>
+            <div id="prf-text" class="mar-l">어렸을 때부터 아이돌을 참 좋아하는 일명 <b>'덕후'</b>였습니다.<br>막연히 '홈마'가 되고 싶다는 생각으로 아무것도 몰랐던 중학생 때, 혼자서 티스토리를 만져보며 HTML과 CSS를 배웠습니다. <br>그때 제 손으로 직접 무언가를 만들어낸다는 것에 엄청난 희열을 느낀 것을 시작으로 웹 개발의 영역에 발을 들였고, 지금도 열심히 '덕후'처럼 배워나가고 있습니다.<br>사용자가 어떻게 하면 더 간단하게 필요한 목적을 달성할 수 있는지 고민하는 것을 좋아합니다. 그래서 늘 사용자 입장에서 고민하는 <b>따뜻한 개발자</b>가 되고 싶습니다. :D</div>
+        </div>
+        <div class="flex-r div-p2-wid" id="prf-e">
+            <div id="prf-edu" class="mar-l">
+                <p>Education</p>
+                <div class="div-bor-r">
+                    <table>
+                        <tr>
+                            <td class="td-t">2014. 2</td>
+                            <td>안산 경안고등학교 졸업</td>
+                        </tr>
+                        <tr>
+                            <td class="td-t">2016. 3</td>
+                            <td>한양대학교 ERICA캠퍼스 입학</td>
+                        </tr>
+                        <tr>
+                            <td class="td-t">2017. 8<br>~ 2018. 2</td>
+                            <td>중국 광저우 화남사범대학 교환유학</td>
+                        </tr>
+                        <tr>
+                            <td class="td-t">2021. 2</td>
+                            <td>한양대학교 ERICA캠퍼스 졸업(예정)<br><small>중국학사, 소프트웨어공학사 복수전공</small></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="prf-exp" class="mar-l">
+                <p>Experience</p>
+                <div class="div-bor-r">
+                    <table>
+                        <tr>
+                            <td class="td-t">2018. 3<br>~ 2019. 2</td>
+                            <td>멋쟁이 사자처럼 6기 멘티</td>
+                        </tr>
+                        <tr>
+                            <td class="td-t">2019. 3<br>~ 2020. 2</td>
+                            <td>멋쟁이 사자처럼 7기 대학별 대표</td>
+                        </tr>
+                        <tr>
+                            <td class="td-t">2020. 8<br>~ 2021. 3</td>
+                            <td>트라텍정보통신(주) 인턴 근무<br><small>(UI/UX, 프론트엔드 개발자)</small></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="page3" class="flex-c up-on-scroll">
+        <p>저는 이런 것들을 할 수 있습니다. 그리고 지금도 끊임없이 발전 중입니다.</p>
+        <div class="flex-r flex-r-c bar-set">
+            <div class="bar-title">
+                <img src="./src/img/HTML5_Logo.svg" alt="html-logo" class="img-logo">
+            </div>
+            <div class="bar-bg">
+                <div class="bar-val" id="bar-html"></div>
+            </div>
+        </div>
+        <div class="flex-r flex-r-c bar-set">
+            <div class="bar-title">
+                <img src="./src/img/CSS3_logo.svg" alt="css-logo" class="img-logo">
+            </div>
+            <div class="bar-bg">
+                <div class="bar-val" id="bar-css"></div>
+            </div>
+        </div>
+        <div class="flex-r flex-r-c bar-set">
+            <div class="bar-title">
+                <img src="./src/img/JS_Logo.svg" alt="js-logo" class="img-logo">
+            </div>
+            <div class="bar-bg">
+                <div class="bar-val" id="bar-js"></div>
+            </div>
+        </div>
+        <div class="flex-r flex-r-c bar-set">
+            <div class="bar-title">
+                <img src="./src/img/jquery_logo.png" alt="jq-logo" class="img-logo">
+            </div>
+            <div class="bar-bg">
+                <div class="bar-val" id="bar-jq"></div>
+            </div>
+        </div>
+        <div class="flex-r flex-r-c bar-set">
+            <div class="bar-title">
+                <img src="./src/img/react_logo.svg" alt="react-logo" class="img-logo">
+            </div>
+            <div class="bar-bg">
+                <div class="bar-val" id="bar-react"></div>
+            </div>
+        </div>
+        <div class="flex-r flex-r-c bar-set">
+            <div class="bar-title">
+                <img src="./src/img/dj_logo.png" alt="django-logo" class="img-logo">
+            </div>
+            <div class="bar-bg">
+                <div class="bar-val" id="bar-dj"></div>
+            </div>
+        </div>
+    </section>
+    <section id="page4" class="flex-c up-on-scroll">
+        <div class="slider">
+            <div class="sl-con">
+                <div class="sl-r">
+                    <h3>독거노인 관리 시스템</h3>
+                    <p class="p-sm">2021. 1 ~ 2021. 3</p>
+                    <p>UI/UX 디자인, 프론트엔드 일부 개발</p>
+                    
+                </div>
+                <div class="sl-l">
+                    <p></p>
+                    <p>트라텍정보통신(주)에서 인턴으로 일하며 참여했던 프로젝트입니다.<br>
+                    아직 제품 출시 전이고, 보안유지 조건이 유효하여 자세히 설명하지 못하는 점 양해부탁드립니다.</p>
+                    <p>xmlhttprequest와 promise, await 등 async(비동기) 처리 패턴을 직접 적용해볼 수 있었고, 반응형 웹을 만들 때 유의하여야 할 부분에 대해 많은 공부가 되었습니다.</p>
+                </div>
+            </div>
+            <div class="sl-con">
+                <div class="sl-r">
+                    <img src="src/img/lab.JPG" class="img-pj" alt="pj-lab"> 
+                    <h3>연구실 홈페이지 개선 프로젝트</h3>
+                    <p class="p-sm">2019. 9 ~ 2019. 12</p>
+                    <p>UI/UX 디자인, 프론트엔드 일부 개발</p>
+                </div>
+                <div class="sl-l">
+                    <p>2019-2학기 웹 애플리케이션 개발 강의 과제로 진행했던 팀프로젝트입니다.</p>
+                    <p>협업 프로젝트를 할 때 구조와 일의 순서를 어떻게 짜야 효율적으로 일을 진행할 수 있는지 알게 되었습니다. 또, 기술스택이 중간에 변경되었지만 초반에 React와 Node.js를 사용해보며 공부해볼 수 있는 계기가 되었습니다.</p>
+                    <p>2019-2학기 전공경진대회 2등상을 수상했습니다.</p>
+                    <p class="flex-r flex-r-c">
+                        <img src="./src/img/firebase_logo.png" class="img-si" alt="firebase-logo"> Firebase
+                    </p>
+                    <p class="flex-r flex-r-c"><img src="./src/img/github-logo.svg" class="img-si" alt="github-logo"><a href="https://github.com/yjnim/webappdev_tp">github.com/yjnim/webappdev_tp</a></p>
+                    <p class="flex-r flex-r-c"><img src="./src/img/link-logo.svg" class="img-si" alt="link-logo"><a href="https://webappdev-1a951.firebaseapp.com/">webappdev-1a951.firebaseapp.com/</a></p>
+                </div>
+            </div>
+            <div class="sl-con">
+                <div class="sl-r">
+                    <img src="src/img/roomres.JPG" id="img-pj-m" alt="pj-res">
+                </div>
+                <div class="sl-l">
+                    <h3>스터디룸 예약 시스템</h3>
+                    <p class="p-sm">2019. 3 ~ 2019. 6</p>
+                    <p>UI/UX 디자인, 프론트엔드 개발</p>
+                    <p>2019-1학기 신산업소프트웨어캡스톤 팀프로젝트 제출작입니다.</p>
+                    <p>제가 단독으로 제작한 프로토타입입니다. Server-side 기능까지는 시간부족으로 Django의 Log-in 기능까지밖에 제작하지 못하였지만, Mobile Web과 jQuery의 기초를 다질 수 있었던 프로젝트였습니다.</p>
+                    <p>Only for Mobile & Prototype</p>
+                    <p class="flex-r flex-r-c">
+                        <img src="./src/img/dj_logo.png" class="img-si" alt="django-logo">Django&nbsp;&nbsp;<img src="./src/img/jquery_logo.png" class="img-si" alt="jquery-logo">jQuery
+                    </p>
+                    <p class="flex-r flex-r-c"><img src="./src/img/github-logo.svg" class="img-si" alt="github-logo"><a href="https://github.com/yjnim/studyroom_reservation">github.com/yjnim/studyroom_reservation</a></p>
+                    <p class="flex-r flex-r-c"><img src="./src/img/link-logo.svg" class="img-si" alt="link-logo"><a href="https://roomres-pj.herokuapp.com/">roomres-pj.herokuapp.com/</a></p>
+                    
+                </div>
+            </div>
+            <div class="sl-con">
+                <div class="sl-r">
+                    <img src="src/img/mwsw.JPG" class="img-pj" alt="pj-mwsw">
+                    <h3>마이웨이, 서브웨이</h3>
+                    <p class="p-sm">2019. 1 ~ 2019. 3</p>
+                    <p>UI/UX 디자인, 프론트엔드 개발</p>
+                </div>
+                <div class="sl-l">
+                    <p>에리카멋사 7기 운영진이 모여 만든 작품입니다.</p>
+                    <p>서브웨이 메뉴를 랜덤으로 고를 수 있고, 내 조합을 선택하여 공유할 수도 있습니다. 처음으로 Django를 사용하여 제대로 된 협업을 해 보았으며, Heroku로 배포하는 과정을 통해 배포의 대략적인 과정을 알 수 있게 되었습니다.</p>
+                    <p class="flex-r flex-r-c">
+                        <img src="./src/img/dj_logo.png" class="img-si" alt="django-logo">Django&nbsp;&nbsp; <img src="./src/img/heroku_logo.png" class="img-si" alt="heroku-logo">Heroku
+                    </p>
+                    <p class="flex-r flex-r-c"><img src="./src/img/github-logo.svg" class="img-si" alt="github-logo"><a href="https://github.com/yjnim/myway_subway">github.com/yjnim/myway_subway</a></p>
+                    <p class="flex-r flex-r-c"><img src="./src/img/link-logo.svg" class="img-si" alt="link-logo"><a href="https://myway-subway.herokuapp.com/">myway-subway.herokuapp.com/</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="page5" class="flex-c up-on-scroll">
+        <h2>연락을 기다립니다. :D</h2>
+        <p class="flex-r p-mg"><img src="./src/img/mail-logo.svg" class="img-si" alt="mail-logo"><a href="mailto:bee1513@gmail.com">bee1513@gmail.com</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<img src="./src/img/github-logo.svg" class="img-si" alt="github-logo"><a href="http://github.com/yjnim">github.com/yjnim</a></p><small>링크 클릭 시 이동합니다.</small>
+        
+    </section>
+</body>
+</html>
